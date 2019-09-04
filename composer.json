@@ -1,0 +1,40 @@
+{
+  "name": "jdsdev/craft-manifest",
+  "description": "Helper plugin for Webpack's manifest.json in Craft templates.",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "license": "MIT",
+  "keywords": [
+    "craftcms",
+    "webpack"
+  ],
+  "authors": [
+    {
+      "name": "mister bk! GmbH",
+      "email": "info@mister-bk.de",
+      "homepage": "https://www.mister-bk.de/"
+    },
+    {
+      "name": "jonathan@jdsdev.com",
+      "homepage": "https://jdsdev.com/"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "jdsdev\\manifest\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Manifest",
+    "handle": "manifest",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "components": {
+      "manifest": "jdsdev\\manifest\\services\\ManifestService"
+    },
+    "class": "jdsdev\\manifest\\Manifest"
+  }
+}
