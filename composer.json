@@ -5,7 +5,10 @@
   "type": "craft-plugin",
   "license": "MIT",
   "keywords": [
+    "craft",
+    "cms",
     "craftcms",
+    "craft-plugin",
     "webpack"
   ],
   "authors": [
